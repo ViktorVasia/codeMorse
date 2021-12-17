@@ -41,3 +41,16 @@ C:\Users\Maikl\Desktop\Vitya\Code Morse\Morse\obj\Debug\Morse.csproj.CoreCompile
 C:\Users\Maikl\Desktop\Vitya\Code Morse\Morse\obj\Debug\Morse.exe
 C:\Users\Maikl\Desktop\Vitya\Code Morse\Morse\obj\Debug\Morse.pdb
 C:\Users\Maikl\Desktop\Vitya\Code Morse\Morse\obj\Debug\Morse.endMorse.resources
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\bin\Debug\Morse.exe.config
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\bin\Debug\Morse.exe
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\bin\Debug\Morse.pdb
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.csproj.AssemblyReference.cache
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.begin.resources
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.endMorse.resources
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.main_menu.resources
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.Properties.Resources.resources
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.trening.resources
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.csproj.GenerateResource.cache
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.csproj.CoreCompileInputs.cache
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.exe
+C:\Users\bogat\Desktop\uni\C#\Code Morse\Morse\obj\Debug\Morse.pdb

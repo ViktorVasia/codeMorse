@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Morse
 {
@@ -22,11 +23,12 @@ namespace Morse
 
     static class Morse
     {
-        public static int speed { get; set; }   // скорость [зн. в мин.]
-        public static string Text { get; set; } // текст задания
-        public static string Code { get; set; } // код Морзе
-        public static int timeDOP { get; set; } // длительность одной точки [мс.]
-        public static int countErr { get; set; }// Кол-во ошибок
+        public static int speed { get; set; }           // скорость [зн. в мин.]
+        public static string Text { get; set; }         // текст задания
+        public static string Code { get; set; }         // код Морзе
+        public static int timeDOP { get; set; }         // длительность одной точки [мс.]
+        public static int countErr { get; set; }        // Кол-во ошибок
+        public static string audioCode { get; set; }    // воспроизведенный код
         
         public static void SetCode()
         {
@@ -100,6 +102,39 @@ namespace Morse
             }
 
             return Morse;
+        }
+
+        /// <summary>
+        /// Поток воспроизведения кода Морзе
+        /// </summary>
+        public static void PlayMorse()
+        {
+            Thread.Sleep(2000);
+            Morse.audioCode = "";
+            for (int sim = 0; sim < Morse.Code.Length; sim++)
+            {
+                char playSim = Morse.Code[sim];
+                if (playSim == ' ')
+                    Thread.Sleep(Morse.timeDOP);
+                else if (playSim == '*')
+                {
+                    Console.Beep(888, Morse.timeDOP);
+                    Morse.audioCode += sim;
+                    // задержка между символами
+                    Thread.Sleep(Morse.timeDOP);
+                }
+                else if (playSim == '−')
+                {
+                    Console.Beep(888, Morse.timeDOP * 3);
+                    Morse.audioCode += sim;
+                    // задержка между символами
+                    Thread.Sleep(Morse.timeDOP);
+                }
+                // Записано без пробела, т.к. я еще не придумал
+                // как отследить пробел от ввода пользователя
+                //Morse.audioCode += sim;
+            }
+            Thread.Sleep(2000);
         }
     }
 }

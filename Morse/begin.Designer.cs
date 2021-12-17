@@ -32,10 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(begin));
             this.ComeBeck_btn = new System.Windows.Forms.Button();
             this.Task_label = new System.Windows.Forms.Label();
-            this.audio_timer = new System.Windows.Forms.Timer(this.components);
-            this.key_timer = new System.Windows.Forms.Timer(this.components);
             this.Test_label = new System.Windows.Forms.Label();
-            this.endwrite = new System.Windows.Forms.Timer(this.components);
+            this.check_tread = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // ComeBeck_btn
@@ -59,14 +57,6 @@
             this.Task_label.TabIndex = 2;
             this.Task_label.Text = "Text_task";
             // 
-            // audio_timer
-            // 
-            this.audio_timer.Tick += new System.EventHandler(this.audio_timer_Tick);
-            // 
-            // key_timer
-            // 
-            this.key_timer.Tick += new System.EventHandler(this.key_timer_Tick);
-            // 
             // Test_label
             // 
             this.Test_label.AutoSize = true;
@@ -77,9 +67,10 @@
             this.Test_label.TabIndex = 3;
             this.Test_label.Text = "Введенный код";
             // 
-            // endwrite
+            // check_tread
             // 
-            this.endwrite.Tick += new System.EventHandler(this.endwrite_Tick);
+            this.check_tread.Interval = 1000;
+            this.check_tread.Tick += new System.EventHandler(this.check_tread_Tick);
             // 
             // begin
             // 
@@ -104,9 +95,7 @@
 
         private System.Windows.Forms.Button ComeBeck_btn;
         private System.Windows.Forms.Label Task_label;
-        private System.Windows.Forms.Timer audio_timer;
-        private System.Windows.Forms.Timer key_timer;
         private System.Windows.Forms.Label Test_label;
-        private System.Windows.Forms.Timer endwrite;
+        private System.Windows.Forms.Timer check_tread;
     }
 }
